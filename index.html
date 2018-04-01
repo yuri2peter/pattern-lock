@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./pattern-lock.js"></script>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    PatternLock({
+        el:"#box",
+        width:400,
+        height:320,
+        offsetX:30,
+        offsetY:30,
+        radius:26,
+        change:function (LinePoint) {
+            console.log(LinePoint.join(','));
+        },
+    })
+</script>
+</body>
+</html>
